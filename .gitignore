@@ -4,3 +4,4 @@
 dataset_checked.csv
 /.idea
 /__pycache__
+.DS_Store
