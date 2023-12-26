@@ -1,0 +1,46 @@
+/* styles.css */
+
+#extension-response-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+#extension-notice-response-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.error-response-popup {
+    background-color: #8d0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.response-popup {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.response-notice-popup {
+    background-color: #eab00f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#closeButton {
+    border: 'none' !important;
+    background-color: 'transparent';
+    color: '#888';
+    font-size: '16px';
+    cursor: 'pointer';
+}
