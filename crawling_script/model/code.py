@@ -14,7 +14,7 @@ def model_inference(features):
   # features = pd.DataFrame(data, index=[0])
 
   # Load the model
-  model = load(filename="model/tuned_xgb_model.joblib")
+  model = load(filename="model/O_xgb_model_model.joblib")
 
   # Transform the data
   input_data_as_array = np.asarray(features)

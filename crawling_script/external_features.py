@@ -103,8 +103,6 @@ def domain_age(domain):
 #################################################################################################################################
 
 def google_index(api_key, cx, url):
-    api_key = "AIzaSyA_nfbhPR_lQalRSetg4zZPt4ge8RU6GaI"
-    cx = "332899deff05744fb"
     parsed = urlparse(url)
     url2 = url
 

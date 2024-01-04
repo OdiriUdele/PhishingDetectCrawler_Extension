@@ -20,7 +20,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         return response.json();
     })
     .then(data => {
-        console.error('data:', data);
 
         var response = { success: false, message: 'Phishing detection failed'};
 
@@ -42,8 +41,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         sendResponse(response);
     })
     .catch(error => {
-        console.error('Error:', error);
-        var response = { success: false, message: 'Error sending URL'};
+        var response = { success: false, message: 'Error checking page', cause: error};
         sendResponse(response);
     });
 

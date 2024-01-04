@@ -18,6 +18,8 @@ function onReady() {
             //makeBackgroundCall(request.data);
             // Process the message and send a response if needed
             sendResponse({ success: true, message: 'Content script received the message' });
+
+            displayNotice();
             chrome.runtime.sendMessage({url: currentUrl}, function(response) {
                 console.log("Background2 response recieved ", response)
                 display(response)
